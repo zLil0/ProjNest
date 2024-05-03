@@ -1,5 +1,5 @@
-import {compilerOptions} from './tsconfig.json'
-import {pathsToModuleNameMapper } from 'ts-jest'
+import { pathsToModuleNameMapper } from 'ts-jest'
+import { compilerOptions } from './tsconfig.json'
 
 export default {
     moduleFileExtensions:  ['js', 'json', 'ts'],
@@ -8,7 +8,7 @@ export default {
             prefix: '<rootDir>/'
         }
     ),
-    testRegex: '.*\\..*spec\\ts$',
+    testRegex: '.*\.spec\.ts$',
     transform: {
         '^.+\\.(t|j)s$': 'ts-jest',
     },
