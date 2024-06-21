@@ -54,7 +54,7 @@ describe('UserEntity Unit Test', ()=>{
     })
 
     it('Should update a user - password', () => {
-        sut.update('new password')
+        sut.updatePassword('new password')
         expect(sut.props.password).toEqual('new password')
     })
     
